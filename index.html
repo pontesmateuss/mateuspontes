@@ -3,295 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mateus Pontes — Técnico em informática</title>
-<meta name="description" content="Portfólio de Mateus Pontes, Técnico em informática. Projetos, competências e contato.">
-<link rel="stylesheet" href="main.css">
+<title>Mateus Pontes — Desenvolvedor Web</title>
+<meta name="description" content="Portfólio de Mateus Pontes, estudante de Informática no IFRN e desenvolvedor web. Projetos, competências e contato.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
   <div class="wrap nav">
-    <a href="#top" class="logo"><span><img src="../mateuspontes/arquivos-midia/PontesDev.png" width="160" height="100"></span>
-
-    <ul class="nav-links">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#competencias">Competências</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-
-    <div class="nav-cta">
-      <a href="#contato" class="btn btn-outline">Entrar em contato</a>
-      <label for="menu-toggle" class="menu-icon">Menu</label>
-    </div>
+    <a href="#inicio" class="logo">Pontes<b>Dev</b></a>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<div class="status-bar">
-  <div class="wrap">
-    <span class="status-dot"></span>
-    <span>status: disponível para novos projetos — resposta em até 48h</span>
-  </div>
-</div>
+<main id="inicio">
 
-<main id="top">
-
-  <!-- ============================================================
-       HERO
-       ============================================================ -->
-  <section class="hero">
+  <section class="hero first">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Tec. Informatica Competência em diversos setores. </span>
-        <h1>Transformo problemas complexos em <em>soluções que funcionam</em> — e que entregam resultado.</h1>
-        <p class="hero-sub">
-          Sou Mateus Pontes, Web Desenvolvedor no segundo período pelo IFRN Campus Ceará-Mirim, ajudo empresas e times a facilitar e melhorar sua experência de trabalho diária. Combino visão técnica com atenção a
-          detalhes que fazem diferença no negócio.
-        </p>
-        <div class="hero-actions">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn btn-outline">Vamos conversar</a>
-        </div>
-      </div>
-
-      <div class="hero-stats">
-        <div>
-          <div class="stat-num">1+</div>
-          <div class="stat-label">Anos de experiência</div>
-        </div>
-        <div>
-          <div class="stat-num">3+</div>
-          <div class="stat-label">Projetos concluidos</div>
-        </div>
-        <div>
-          <div class="stat-num">0</div>
-          <div class="stat-label">Clientes/empresas atendidas</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       SOBRE MIM
-       ============================================================ -->
-  <section id="sobre">
-    <div class="wrap about-grid">
-      <div class="about-photo">
-        <img src="../mateuspontes/arquivos-midia/eu-1.jpg">
-      </div>
-
-      <div class="about-text">
-        <span class="eyebrow">Sobre mim</span>
-        <h2>2 anos estudando estratégia,  execução, e me aprimorando.</h2>
-        <p style="margin-top: 20px;">
-          <strong>Estudante do Instituto Federal de Ciência e Tecnologia do Rio Grande do Norte.</strong> — Comecei a estudar em 2025, pratico e estudo me dedicando desde que comecei. Gosto de facilitar tarefas e deixa-las mais fáceis e práticas. Acredito que com mais praticidade, chegamos cada vez mais perto de atingir nossas metas e objetivos.
-        </p>
+        <span class="eyebrow">Estudante de Informática · IFRN</span>
+        <h1>Mateus Pontes</h1>
         <p>
-          A ideia de desistir não existe no meu vocabulário, tenho fome de aprender e obter conhecimento.
-          
+          Desenvolvedor web em formação no IFRN, Campus Ceará-Mirim. Crio sistemas e sites simples,
+          funcionais e fáceis de usar.
         </p>
-
-        <ul class="highlights">
-          <li><span class="tag">OBJETIVO</span> Fazer parte de projetos que tenham muito impacto.</li>
-          <li><span class="tag">OBJETIVO</span> Solucionar problemas para empresas e pessoas.</li>
-          <li><span class="tag">OBJETIVO</span> atender as espectativas de trabalho e entre outros.</li>
-        </ul>
+        <div class="actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="arquivos-midia/eu-1.jpg" alt="Foto de Mateus Pontes">
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       PROJETOS EM DESTAQUE
-       ============================================================ -->
+  <section id="sobre" class="about">
+    <div class="wrap">
+      <h2>Sobre mim</h2>
+      <p class="lead">Quem eu sou e o que busco.</p>
+      <p>
+        <strong>Sou aluno do Instituto Federal do Rio Grande do Norte (IFRN), no Campus Ceará-Mirim.</strong>
+        Estudo e pratico programação desde 2025, sempre com foco em tornar tarefas do dia a dia mais
+        simples e práticas.
+      </p>
+      <p>Tenho vontade constante de aprender e não desisto diante de um problema difícil.</p>
+      <ul class="goals">
+        <li>Participar de projetos com impacto real.</li>
+        <li>Resolver problemas de empresas e pessoas com tecnologia.</li>
+        <li>Corresponder às expectativas de trabalho e crescer junto com o time.</li>
+      </ul>
+    </div>
+  </section>
+
   <section id="projetos">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Projetos em destaque</span>
-        <h2>Casos de estudo</h2>
-        <p>Uma seleção de projetos que mostram como eu penso e como eu trabalho — do problema ao resultado.</p>
-      </div>
+      <h2>Projetos</h2>
+      <p class="lead">Uma seleção do que já construí.</p>
 
-      <div class="projects-grid">
+      <div class="projects">
 
-        <!-- CARD 1 — copie este bloco inteiro (de <div class="project-card"> até </div> final) para adicionar mais projetos -->
-        <div class="project-card">
-          <div class="project-media"><img src="../mateuspontes/arquivos-midia/projeto-banco.png" alt="Projeto Contas Bancárias"></div>
-          <div class="project-body">
-            <span class="project-cat">Aplicação de interface e sistema</span>
-            <h3>Sistema Bancário em Python</h3>
-
-            <div class="project-spec">
-              <div class="field">
-                <span class="field-label">Objetivo:</span>
-                <span class="field-value">Sistema bancário funcional em Python, com aplicação de Programação Orientada a Objetos. Com futura aplicação de Banco de dados em MySQL.</span>
-              </div>
-              <div class="field">
-                <span class="field-label">Stack:</span>
-                <span class="field-value">
-                  <span class="stack-chips">
-                    <span class="chip">Python</span>
-                    <span class="chip">Biblioteca Tkinter</span>
-                    <span class="chip">Biblioteca Type List</span>
-                  </span>
-                </span>
-              </div>
-              <div class="field">
-                <span class="field-label">Resultado:</span>
-                <span class="field-value result">Sistema bancário funcional e simulativo, com aplicação de Programação Orientada a Objetos. Preciso de um bom conhecimento em Python para execução.</span>
-              </div>
-            </div>
-
-            <div class="project-links">
-              <a href="https://github.com/pontesmateuss/POO">Repositório / Github →</a >
-            </div>
+        <article class="project">
+          <span class="cat">Aplicação desktop</span>
+          <h3>Sistema Bancário em Python</h3>
+          <p>
+            Sistema bancário funcional desenvolvido com Programação Orientada a Objetos e interface
+            gráfica. A próxima etapa é integrar um banco de dados MySQL.
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Tkinter</li>
+            <li>POO</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/pontesmateuss/POO">Repositório no GitHub →</a>
           </div>
-        </div>
-        <!-- FIM CARD 1 -->
+        </article>
 
-        <div class="project-card">
-          <div class="project-media"><img src="../mateuspontes/arquivos-midia/petlandia.png" alt="Petlândia"></div>
-          <div class="project-body">
-            <span class="project-cat">Site de Loja Virtual de Petshop</span>
-            <h3>Petlândia</h3>
-            <div class="project-spec">
-              <div class="field">
-                <span class="field-label">Objetivo:</span>
-                <span class="field-value">Ser um site responsivo, funcional, boa paleta de cores, e boa acessibilidade.</span>
-              </div>
-              <div class="field">
-                <span class="field-label">Stack:</span>
-                <span class="field-value">
-                  <span class="stack-chips">
-                    <span class="chip">HTML5</span>
-                    <span class="chip">CSS3</span>
-                    <span class="chip">Javascript</span>
-                  </span>
-                </span>
-              </div>
-              <div class="field">
-                <span class="field-label">Resultado:</span>
-                <span class="field-value result">Site responsivo feito em equipe, fucional e entrega o que promete.</span>
-              </div>
-            </div>
-            <div class="project-links">
-              <a href="https://pontesmateuss.github.io/PROJETO-AW/">Acessar site →</a>
-              <a href="https://github.com/pontesmateuss/PROJETO-AW">Repositório / Github →</a>
-            </div>
+        <article class="project">
+          <span class="cat">Site · Trabalho em equipe</span>
+          <h3>Petlândia</h3>
+          <p>
+            Loja virtual de petshop, responsiva e acessível, com paleta de cores cuidadosa.
+            Desenvolvida em equipe.
+          </p>
+          <ul class="tags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="links">
+            <a href="https://pontesmateuss.github.io/PROJETO-AW/">Acessar site →</a>
+            <a href="https://github.com/pontesmateuss/PROJETO-AW">Repositório no GitHub →</a>
           </div>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <div class="project-media"><img src="../mateuspontes/arquivos-midia/simulador-concursos.png" alt="Simulador de concursos"></div>
-          <div class="project-body">
-            <span class="project-cat">Sistema simulador de provas</span>
-            <h3>Simulador de Provas para Concurso em Jasviscript</h3>
-            <div class="project-spec">
-              <div class="field">
-                <span class="field-label">Problema:</span>
-                <span class="field-value">Precisei estrudar para provas de concursos e não tive o conhecimento de nenhuma plataforma.</span>
-              </div>
-              <div class="field">
-                <span class="field-label">Solução:</span>
-                <span class="field-value">Ferramenta para estudo e melhor eficiência em provas.</span>
-              </div>
-              <div class="field">
-                <span class="field-label">Stack:</span>
-                <span class="field-value">
-                  <span class="stack-chips">
-                    <span class="chip">Javascript</span>
-                    <span class="chip">HTML5/CSS3</span>
-                  </span>
-                </span>
-              </div>
-              <div class="field">
-                <span class="field-label">Resultado:</span>
-                <span class="field-value result">Sistema que estimula o estudo e competência em provas.</span>
-              </div>
-            </div>
-            <div class="project-links">
-              <a href="https://pontesmateuss.github.io/SIMULADOS-CONCURSOS/">Acessar site →</a>
-              <a href="https://github.com/pontesmateuss/SIMULADOS-CONCURSOS">Repositório / GitHub →</a>
-            </div>
+        <article class="project">
+          <span class="cat">Aplicação web</span>
+          <h3>Planner Acadêmico</h3>
+          <p>
+            Ferramenta para organizar a rotina de estudos: disciplinas, tarefas, datas de provas e
+            entregas em um só lugar, ajudando a planejar a semana e cumprir prazos.
+          </p>
+          <ul class="tags">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+          <!-- Troque os links abaixo pelos do projeto real quando ele estiver publicado -->
+          <div class="links">
+            <a href="https://github.com/pontesmateuss">Repositório no GitHub →</a>
           </div>
-        </div>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       COMPETÊNCIAS
-       ============================================================ -->
   <section id="competencias">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Competências</span>
-        <h2>Ferramentas e forma de trabalhar</h2>
-        <p>Tecnologias, ferramentas e práticas que uso no dia a dia.</p>
-      </div>
+      <h2>Competências</h2>
+      <p class="lead">Tecnologias e ferramentas que uso no dia a dia.</p>
 
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Linguagens &amp; Frameworks</h3>
-          <div class="skill-chips">
-            <span class="chip">HTML5/CSS3</span>
-            <span class="chip">Python</span>
-            <span class="chip">Javascript</span>
-            <span class="chip">MySQL</span>
-          </div>
+      <div class="skills">
+        <div>
+          <h3>Linguagens</h3>
+          <ul>
+            <li>HTML5 e CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>MySQL</li>
+          </ul>
         </div>
-
-        <div class="skill-group">
-          <h3>Ferramentas &amp; Plataformas</h3>
-          <div class="skill-chips">
-            <span class="chip">VScode</span>
-            <span class="chip">Word</span>
-            <span class="chip">Excel</span>
-            <span class="chip">GitHub</span>
-          </div>
+        <div>
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Git e GitHub</li>
+            <li>Word</li>
+            <li>Excel</li>
+          </ul>
         </div>
-
-        <div class="skill-group">
-          <h3>Metodologia &amp; Soft Skills</h3>
-          <div class="skill-chips">
-            <span class="chip">Escutar muito bem</span>
-            <span class="chip">Administração</span>
-            <span class="chip">Comunicação com cliente</span>
-            <span class="chip">Documentação técnica</span>
-          </div>
+        <div>
+          <h3>Habilidades</h3>
+          <ul>
+            <li>Comunicação com o cliente</li>
+            <li>Escuta ativa</li>
+            <li>Documentação técnica</li>
+            <li>Administração</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       CONTATO
-       ============================================================ -->
   <section id="contato" class="contact">
     <div class="wrap">
-      <span class="eyebrow">Contato</span>
-      <h2>Tem um projeto em mente ou uma vaga aberta? Vamos conversar.</h2>
+      <h2>Contato</h2>
       <p class="lead">
-        Estou disponível tanto para oportunidades de trabalho quanto para projetos freelance.
-        Me manda uma mensagem — respondo em até 48h.
+        Aberto a oportunidades de estágio, trabalho e projetos. Respondo em até 48 horas.
       </p>
-      <div class="contact-actions">
-        <a href="mailto:contatcmateuspontes@gmail.com" class="btn btn-accent">Enviar e-mail</a>
-        <a href="https://www.linkedin.com/in/mateus-pontes-481290369/" class="btn btn-outline" style="border-color:#2A3040; color:#fff;">Ver LinkedIn</a>
-      </div>
 
-      <div class="contact-links">
+      <div class="contact-list">
         <a href="mailto:mateuspontescontato@gmail.com">
           <span class="label">E-mail</span>
           <span class="value">mateuspontescontato@gmail.com</span>
         </a>
         <a href="https://www.linkedin.com/in/mateus-pontes-481290369/">
           <span class="label">LinkedIn</span>
-          <span class="value">linkedin.com/in/pontesmateuss</span>
+          <span class="value">linkedin.com/in/mateus-pontes-481290369</span>
         </a>
         <a href="https://github.com/pontesmateuss">
           <span class="label">GitHub</span>
@@ -305,8 +195,8 @@
 
 <footer>
   <div class="wrap">
-    <span>© <span id="ano">2026</span> Mateus Pontes. Todos os direitos reservados.</span>
-    <a href="#top">↑ Voltar ao topo</a>
+    <span>© 2026 Mateus Pontes</span>
+    <a href="#inicio">Voltar ao topo ↑</a>
   </div>
 </footer>
 
