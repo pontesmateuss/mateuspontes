@@ -1,143 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mateus Pontes — Desenvolvedor Web</title>
-<meta name="description" content="Portfólio de Mateus Pontes, estudante de Informática no IFRN e desenvolvedor web. Projetos, competências e contato.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mateus Pontes — Desenvolvedor Web</title>
+  <meta name="description" content="Portfólio de Mateus Pontes, estudante de Informática no IFRN e desenvolvedor web. Projetos, competências e contato.">
+  <meta name="theme-color" content="#f6f7f9">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-<header>
-  <div class="wrap nav">
-    <a href="#inicio" class="logo">Pontes<b>Dev</b></a>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#competencias">Competências</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="PontesDev, voltar ao início">Pontes<span>Dev</span></a>
+      <nav aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#competencias">Competências</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main id="inicio">
+  <main id="conteudo">
 
-  <section class="hero first">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Estudante de Informática · IFRN</span>
-        <h1>Mateus Pontes</h1>
-        <p>
-          Desenvolvedor web em formação no IFRN, Campus Ceará-Mirim. Crio sistemas e sites simples,
-          funcionais e fáceis de usar.
-        </p>
-        <div class="actions">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="titulo-hero">
+      <div class="hero-text">
+        <p class="hero-role">Estudante de Informática no IFRN</p>
+        <h1 id="titulo-hero">Mateus Pontes</h1>
+        <p class="hero-lead">Desenvolvedor web em formação no IFRN, Campus Ceará-Mirim. Crio sistemas e sites simples, funcionais e fáceis de usar.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-ghost" href="#contato">Entrar em contato</a>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="arquivos-midia/eu-1.jpg" alt="Foto de Mateus Pontes">
-      </div>
-    </div>
-  </section>
+      <figure class="hero-photo">
+        <img src="arquivos-midia/eu-1.jpg" alt="Foto de Mateus Pontes" width="640" height="800" fetchpriority="high">
+      </figure>
+    </section>
 
-  <section id="sobre" class="about">
-    <div class="wrap">
-      <h2>Sobre mim</h2>
-      <p class="lead">Quem eu sou e o que busco.</p>
-      <p>
-        <strong>Sou aluno do Instituto Federal do Rio Grande do Norte (IFRN), no Campus Ceará-Mirim.</strong>
-        Estudo e pratico programação desde 2025, sempre com foco em tornar tarefas do dia a dia mais
-        simples e práticas.
-      </p>
-      <p>Tenho vontade constante de aprender e não desisto diante de um problema difícil.</p>
-      <ul class="goals">
-        <li>Participar de projetos com impacto real.</li>
-        <li>Resolver problemas de empresas e pessoas com tecnologia.</li>
-        <li>Corresponder às expectativas de trabalho e crescer junto com o time.</li>
+    <!-- Sobre -->
+    <section class="section container" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="section-head">
+        <h2 id="titulo-sobre">Sobre mim</h2>
+        <p>Quem eu sou e o que busco.</p>
+      </div>
+      <div class="about-grid">
+        <div class="prose">
+          <p class="about-lead">Sou aluno do Instituto Federal do Rio Grande do Norte (IFRN), no Campus Ceará-Mirim.</p>
+          <p>Estudo e pratico programação desde 2025, sempre com foco em tornar tarefas do dia a dia mais simples e práticas.</p>
+          <p>Tenho vontade constante de aprender e não desisto diante de um problema difícil.</p>
+        </div>
+        <div class="goals">
+          <h3>O que busco</h3>
+          <ul>
+            <li>Participar de projetos com impacto real.</li>
+            <li>Resolver problemas de empresas e pessoas com tecnologia.</li>
+            <li>Corresponder às expectativas de trabalho e crescer junto com o time.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section container" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="section-head">
+        <h2 id="titulo-projetos">Projetos</h2>
+        <p>Uma seleção do que já construí.</p>
+      </div>
+
+      <ul class="projects">
+        <li class="project">
+          <div class="project-main">
+            <p class="project-kind">Aplicação desktop</p>
+            <h3>Sistema Bancário em Python</h3>
+            <p>Sistema bancário funcional desenvolvido com Programação Orientada a Objetos e interface gráfica. A próxima etapa é integrar um banco de dados MySQL.</p>
+          </div>
+          <div class="project-side">
+            <ul class="tags" aria-label="Tecnologias">
+              <li>Python</li><li>Tkinter</li><li>POO</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/pontesmateuss/POO" target="_blank" rel="noopener">Repositório no GitHub</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <div class="project-main">
+            <p class="project-kind">Site feito em equipe</p>
+            <h3>Petlândia</h3>
+            <p>Loja virtual de petshop, responsiva e acessível, com paleta de cores cuidadosa. Desenvolvida em equipe.</p>
+          </div>
+          <div class="project-side">
+            <ul class="tags" aria-label="Tecnologias">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://pontesmateuss.github.io/PROJETO-AW/" target="_blank" rel="noopener">Acessar site</a>
+              <a href="https://github.com/pontesmateuss/PROJETO-AW" target="_blank" rel="noopener">Repositório no GitHub</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <div class="project-main">
+            <p class="project-kind">Aplicação web</p>
+            <h3>Planner Acadêmico</h3>
+            <p>Ferramenta para organizar a rotina de estudos: disciplinas, tarefas, datas de provas e entregas em um só lugar, ajudando a planejar a semana e cumprir prazos.</p>
+          </div>
+          <div class="project-side">
+            <ul class="tags" aria-label="Tecnologias">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://pontesmateuss.github.io/planner-academico/" target="_blank" rel="noopener">Acessar site</a>
+              <a href="https://github.com/pontesmateuss/planner-academico" target="_blank" rel="noopener">Repositório no GitHub</a>
+            </div>
+          </div>
+        </li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="projetos">
-    <div class="wrap">
-      <h2>Projetos</h2>
-      <p class="lead">Uma seleção do que já construí.</p>
-
-      <div class="projects">
-
-        <article class="project">
-          <span class="cat">Aplicação desktop</span>
-          <h3>Sistema Bancário em Python</h3>
-          <p>
-            Sistema bancário funcional desenvolvido com Programação Orientada a Objetos e interface
-            gráfica. A próxima etapa é integrar um banco de dados MySQL.
-          </p>
-          <ul class="tags">
-            <li>Python</li>
-            <li>Tkinter</li>
-            <li>POO</li>
-          </ul>
-          <div class="links">
-            <a href="https://github.com/pontesmateuss/POO">Repositório no GitHub →</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <span class="cat">Site · Trabalho em equipe</span>
-          <h3>Petlândia</h3>
-          <p>
-            Loja virtual de petshop, responsiva e acessível, com paleta de cores cuidadosa.
-            Desenvolvida em equipe.
-          </p>
-          <ul class="tags">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-          </ul>
-          <div class="links">
-            <a href="https://pontesmateuss.github.io/PROJETO-AW/">Acessar site →</a>
-            <a href="https://github.com/pontesmateuss/PROJETO-AW">Repositório no GitHub →</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <span class="cat">Aplicação web</span>
-          <h3>Planner Acadêmico</h3>
-          <p>
-            Ferramenta para organizar a rotina de estudos: disciplinas, tarefas, datas de provas e
-            entregas em um só lugar, ajudando a planejar a semana e cumprir prazos.
-          </p>
-          <ul class="tags">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-          </ul>
-          <!-- Troque os links abaixo pelos do projeto real quando ele estiver publicado -->
-          <div class="links">
-            <a href="https://github.com/pontesmateuss/planner-academico">Repositório no GitHub →</a>
-            <a href="https://pontesmateuss.github.io/planner-academico/">Acessar site →</a>
-          </div>
-        </article>
-
+    <!-- Competências -->
+    <section class="section container" id="competencias" aria-labelledby="titulo-competencias">
+      <div class="section-head">
+        <h2 id="titulo-competencias">Competências</h2>
+        <p>Tecnologias e ferramentas que uso no dia a dia.</p>
       </div>
-    </div>
-  </section>
-
-  <section id="competencias">
-    <div class="wrap">
-      <h2>Competências</h2>
-      <p class="lead">Tecnologias e ferramentas que uso no dia a dia.</p>
 
       <div class="skills">
-        <div>
+        <div class="skill-group">
           <h3>Linguagens</h3>
           <ul>
             <li>HTML5 e CSS3</li>
@@ -146,7 +147,7 @@
             <li>MySQL</li>
           </ul>
         </div>
-        <div>
+        <div class="skill-group">
           <h3>Ferramentas</h3>
           <ul>
             <li>VS Code</li>
@@ -155,7 +156,7 @@
             <li>Excel</li>
           </ul>
         </div>
-        <div>
+        <div class="skill-group">
           <h3>Habilidades</h3>
           <ul>
             <li>Comunicação com o cliente</li>
@@ -165,41 +166,29 @@
           </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contato" class="contact">
-    <div class="wrap">
-      <h2>Contato</h2>
-      <p class="lead">
-        Aberto a oportunidades de estágio, trabalho e projetos. Respondo em até 48 horas.
-      </p>
-
-      <div class="contact-list">
-        <a href="mailto:mateuspontescontato@gmail.com">
-          <span class="label">E-mail</span>
-          <span class="value">mateuspontescontato@gmail.com</span>
-        </a>
-        <a href="https://www.linkedin.com/in/mateus-pontes-481290369/">
-          <span class="label">LinkedIn</span>
-          <span class="value">linkedin.com/in/mateus-pontes-481290369</span>
-        </a>
-        <a href="https://github.com/pontesmateuss">
-          <span class="label">GitHub</span>
-          <span class="value">github.com/pontesmateuss</span>
-        </a>
+    <!-- Contato -->
+    <section class="section container contact" id="contato" aria-labelledby="titulo-contato">
+      <div class="contact-card">
+        <h2 id="titulo-contato">Vamos conversar?</h2>
+        <p>Aberto a oportunidades de estágio, trabalho e projetos. Respondo em até 48 horas.</p>
+        <a class="contact-mail" href="mailto:mateuspontescontato@gmail.com">mateuspontescontato@gmail.com</a>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/mateus-pontes-481290369/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/pontesmateuss" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano">2026</span> Mateus Pontes</p>
+      <a href="#inicio">Voltar ao topo</a>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>© 2026 Mateus Pontes</span>
-    <a href="#inicio">Voltar ao topo ↑</a>
-  </div>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
