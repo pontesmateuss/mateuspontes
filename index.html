@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="site-header" id="inicio">
@@ -35,15 +36,23 @@
     <section class="hero container" aria-labelledby="titulo-hero">
       <div class="hero-text">
         <p class="hero-role">Estudante de Informática no IFRN</p>
-        <h1 id="titulo-hero">Mateus Pontes</h1>
+        <h1 id="titulo-hero">Mateus <span>Pontes<span class="title-dot">.</span></span></h1>
         <p class="hero-lead">Desenvolvedor web em formação no IFRN, Campus Ceará-Mirim. Crio sistemas e sites simples, funcionais e fáceis de usar.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-primary" href="#projetos">Ver projetos <span aria-hidden="true">↗</span></a>
           <a class="btn btn-ghost" href="#contato">Entrar em contato</a>
         </div>
       </div>
       <figure class="hero-photo">
+        <svg class="orbital-art" viewBox="0 0 440 520" fill="none" aria-hidden="true">
+          <ellipse cx="220" cy="260" rx="212" ry="186" transform="rotate(-35 220 260)"/>
+          <ellipse cx="220" cy="260" rx="202" ry="242" transform="rotate(28 220 260)"/>
+          <path d="M12 260h416M220 12v496" class="orbit-axis"/>
+          <circle cx="60" cy="117" r="7" class="orbit-node"/>
+          <circle cx="393" cy="363" r="5" class="orbit-node"/>
+        </svg>
         <img src="arquivos-midia/eu-1.jpg" alt="Foto de Mateus Pontes" width="640" height="800" fetchpriority="high">
+        <span class="photo-label" aria-hidden="true"><span>&lt;/&gt;</span> ideias em construção</span>
       </figure>
     </section>
 
@@ -79,6 +88,7 @@
 
       <ul class="projects">
         <li class="project">
+          <div class="project-art art-bank" aria-hidden="true"><span class="art-index">01 / PYTHON</span><svg viewBox="0 0 240 140" fill="none"><path d="m50 48 70-30 70 30H50ZM45 116h150M55 106h130M68 60v36m34-36v36m36-36v36m34-36v36"/><circle cx="120" cy="38" r="5"/><path class="art-trace" d="M25 90 52 78l30 10 35-24 28 8 66-48"/></svg></div>
           <div class="project-main">
             <p class="project-kind">Aplicação desktop</p>
             <h3>Sistema Bancário em Python</h3>
@@ -95,6 +105,7 @@
         </li>
 
         <li class="project">
+          <div class="project-art art-pet" aria-hidden="true"><span class="art-index">02 / WEB</span><svg viewBox="0 0 240 140" fill="none"><ellipse cx="120" cy="78" rx="83" ry="46" class="art-orbit"/><path d="M95 89c-8 20 9 24 25 15 16 9 33 5 25-15l-13-18c-6-9-18-9-24 0Z"/><ellipse cx="87" cy="65" rx="10" ry="14" transform="rotate(-25 87 65)"/><ellipse cx="108" cy="44" rx="9" ry="13"/><ellipse cx="133" cy="44" rx="9" ry="13"/><ellipse cx="154" cy="65" rx="10" ry="14" transform="rotate(25 154 65)"/></svg></div>
           <div class="project-main">
             <p class="project-kind">Site feito em equipe</p>
             <h3>Petlândia</h3>
@@ -112,6 +123,7 @@
         </li>
 
         <li class="project">
+          <div class="project-art art-planner" aria-hidden="true"><span class="art-index">03 / WEB</span><svg viewBox="0 0 240 140" fill="none"><rect x="61" y="28" width="118" height="98" rx="9"/><path d="M61 54h118M88 20v17m64-17v17M80 73h14m19 0h14m19 0h14M80 94h14m19 0h14M80 112h14"/><path class="art-check" d="m140 101 9 9 25-27"/></svg></div>
           <div class="project-main">
             <p class="project-kind">Aplicação web</p>
             <h3>Planner Acadêmico</h3>
