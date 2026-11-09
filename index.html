@@ -23,6 +23,7 @@
         <ul class="nav-list">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#github">GitHub</a></li>
           <li><a href="#competencias">Competências</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -142,6 +143,35 @@
       </ul>
     </section>
 
+    <!-- GitHub: dados públicos consultados diretamente na API -->
+    <section class="section container" id="github" aria-labelledby="titulo-github">
+      <div class="section-head">
+        <h2 id="titulo-github">Código em movimento</h2>
+        <p>Meu trabalho também pode ser acompanhado por aqui.</p>
+      </div>
+      <div class="gh-dashboard" aria-busy="true">
+        <div class="gh-profile">
+          <div class="gh-identity">
+            <img id="gh-avatar" src="arquivos-midia/eu-1.jpg" alt="Avatar de Mateus Pontes" width="64" height="64" loading="lazy">
+            <div><span class="gh-eyebrow">DIÁRIO DE DESENVOLVIMENTO</span><h3 id="gh-name">Mateus Pontes</h3><a href="https://github.com/pontesmateuss" target="_blank" rel="noopener">@pontesmateuss ↗</a></div>
+          </div>
+          <a class="btn btn-ghost" href="https://github.com/pontesmateuss" target="_blank" rel="noopener">Explorar perfil <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="gh-toolbar"><p id="gh-status" role="status">Conectando ao GitHub…</p><button id="gh-refresh" class="gh-refresh" type="button">↻ Atualizar</button></div>
+        <dl class="gh-metrics">
+          <div><dt>Repositórios públicos</dt><dd id="gh-repos">—</dd></div>
+          <div><dt>Seguidores</dt><dd id="gh-followers">—</dd></div>
+          <div><dt>Estrelas recebidas</dt><dd id="gh-stars">—</dd></div>
+          <div><dt>Eventos no período</dt><dd id="gh-events">—</dd></div>
+        </dl>
+        <div class="gh-chart-head"><div><h3>Ritmo de atividade</h3><p>Eventos públicos por dia · horário de Brasília</p></div><div class="gh-periods" role="group" aria-label="Período do gráfico"><button type="button" data-days="7" aria-pressed="false">7 dias</button><button type="button" data-days="14" aria-pressed="false">14 dias</button><button type="button" data-days="30" aria-pressed="true">30 dias</button></div></div>
+        <div id="gh-chart" class="gh-chart"><p class="gh-placeholder">Buscando atividade pública…</p></div>
+        <p id="gh-chart-summary" class="gh-chart-summary"></p>
+        <div class="gh-bottom"><div><h3>Últimos movimentos <span aria-hidden="true">↗</span></h3><ul id="gh-feed" class="gh-feed"><li>Aguardando dados do GitHub.</li></ul></div><aside class="gh-note"><span class="gh-eyebrow">SOBRE OS DADOS</span><p>Cada evento é uma ação pública, como um push, uma issue ou um pull request. Não representa a contagem de commits.</p><p>A API retorna até 300 eventos dos últimos 30 dias e pode levar até 6 horas para refletir novas ações.</p><a href="https://github.com/pontesmateuss?tab=overview" target="_blank" rel="noopener">Ver contribuições no GitHub ↗</a></aside></div>
+        <noscript><p class="gh-note">Ative o JavaScript para carregar o painel ou acesse o perfil pelo link acima.</p></noscript>
+      </div>
+    </section>
+
     <!-- Competências -->
     <section class="section container" id="competencias" aria-labelledby="titulo-competencias">
       <div class="section-head">
@@ -202,5 +232,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="github.js"></script>
 </body>
 </html>
